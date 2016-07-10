@@ -19,7 +19,7 @@ regulaFalsi := procedure(f, a, b, n) {
           print("a = $a$, b = $b$");
         }
     }
-    if (-fa < fb) {
+    if (-fa < fb) {   // -fa = |fa|
         return a;
     } else {
         return b;
@@ -46,6 +46,4 @@ cosXEqualsX := procedure(x) {
 f4 := x |-> x ** 4 - 1;
 
 x := regulaFalsi(f4, 0.0, 10.0, 10000);
-
-
 
